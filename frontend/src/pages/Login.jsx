@@ -1,7 +1,7 @@
 import { useState } from "react";
 import API from "../services/api";
 import { Route, useNavigate } from "react-router-dom";
-
+import { Button } from "@mui/material";
 function Login() {
   const [form, setForm] = useState({ email: "", password: "" });
   const navigate = useNavigate();
@@ -19,7 +19,6 @@ function Login() {
 
   return (
     <>
-    
      <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
@@ -45,11 +44,7 @@ function Login() {
                 <label htmlFor="password" className="block text-sm/6 font-medium text-gray-400">
                   Password
                 </label>
-                <div className="text-sm">
-                  <a href="#" className="font-semibold text-indigo-400 hover:text-indigo-300">
-                    Forgot password?
-                  </a>
-                </div>
+                
               </div>
               <div className="mt-2">
                 <input
