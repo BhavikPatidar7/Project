@@ -3,7 +3,6 @@ const router = express.Router();
 const db = require("../config/db");
 const { verifyToken, checkRole } = require("../middleware/authMiddleware");
 
-// Submit or Update Rating
 router.post("/rate", verifyToken, checkRole("USER"), (req, res) => {
     const { store_id, rating } = req.body;
 

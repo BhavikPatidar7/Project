@@ -3,11 +3,6 @@ const router = express.Router();
 const db = require("../config/db");
 const { verifyToken, checkRole } = require("../middleware/authMiddleware");
 
-// router.get("/", verifyToken, checkRole("OWNER"), (req, res) => {
-//     res.json({ message: "Store Route Working" });
-// });
-
-
 router.get("/storeRoutes", verifyToken, checkRole("OWNER"), (req, res) => {
     db.query(
         `SELECT users.name, ratings.rating 

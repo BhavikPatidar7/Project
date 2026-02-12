@@ -19,7 +19,7 @@ function Login() {
 
   return (
     <form onSubmit={handleLogin}>
-      <h2>Login</h2>
+      <h2 className="text-2xl font-bold mb-4 text-red-600">Login</h2>
       <input
         type="email"
         placeholder="Email"
