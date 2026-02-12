@@ -22,7 +22,6 @@ function Register() {
   return (
       <>
      <div className="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
-
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <form onSubmit={handleRegister} className="space-y-6">
             <div>
@@ -95,12 +94,12 @@ function Register() {
               </button>
             </div>
 
+          </form>
          <p className="mt-10 text-center text-sm/6 text-gray-400">
             <a href="/" className="font-semibold text-indigo-400 hover:text-indigo-300">
               sign in
             </a>
           </p>
-          </form>
 
         </div>
       </div>
