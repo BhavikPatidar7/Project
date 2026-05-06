@@ -5,9 +5,6 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <div className='bg-blue-950 h-screen'> 
-
     <App />
-    </div>
   </StrictMode>,
 )
